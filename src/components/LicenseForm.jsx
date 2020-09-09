@@ -38,27 +38,29 @@ class LicenseForm extends Component {
     }
 
     render(){
-        const {step} = this.state;
-        const { customer, country, package_type, setup_details, license_type, license_start_date, license_end_date, additional_units, storage_system_details } = this.state;
-        const values = { customer, country, package_type, setup_details, license_type, license_start_date, license_end_date, additional_units, storage_system_details };
-        switch(step) {
-        case 1:
-            return <LicenseDetails
-                    nextStep={this.nextStep}
-                    handleChange = {this.handleChange}
-                    values={values}
-                    />
+    //     const {step} = this.state;
+    //     const { customer, country, package_type, setup_details, license_type, license_start_date, license_end_date, additional_units, storage_system_details } = this.state;
+    //     const values = { customer, country, package_type, setup_details, license_type, license_start_date, license_end_date, additional_units, storage_system_details };
+    //     switch(step) {
+    //     case 1:
+    //         return <LicenseDetails
+    //                 nextStep={this.nextStep}
+    //                 handleChange = {this.handleChange}
+    //                 values={values}
+    //                 />
        
-        case 2:
-            return <Confirmation
-                    nextStep={this.nextStep}
-                    prevStep={this.prevStep}
-                    values={values}
-                    />
-        case 3:
-            return <Success />
-        }
-    }
+    //     case 2:
+    //         return <Confirmation
+    //                 nextStep={this.nextStep}
+    //                 prevStep={this.prevStep}
+    //                 values={values}
+    //                 />
+    //     case 3:
+    //         return <Success />
+    //     }
+    // }
+
+    
 }
 
 export default LicenseForm;

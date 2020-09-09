@@ -12,7 +12,7 @@ class LicenseDetails extends Component{
 
     render(){
         const { values } = this.props;
-        const countries = require("./countries.json")
+        //const countries = require("./countries.json")
 
         return(
             <Form >
@@ -27,11 +27,11 @@ class LicenseDetails extends Component{
                 </Form.Field>
                 <Form.Field>
                     <label>Country</label>
-                    {/* <input
+                    <input
                     placeholder='Country'
                     onChange={this.props.handleChange('country')}
                     defaultValue={values.country}
-                    /> */}
+                    />
                 </Form.Field>
                 <Form.Field>
                     <label>Package Type</label>
